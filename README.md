@@ -1,5 +1,5 @@
 # grep4j-scala
-Porting grep4j library to scala.  
+Porting [grep4j](https://github.com/marcocast/grep4j) library to scala.
 
 Import implicit conversions:
 ```scala
