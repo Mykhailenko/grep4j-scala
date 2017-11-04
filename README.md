@@ -8,8 +8,14 @@ import hlib.mykhailenko.ImplicitConversions._
 
 Then you can do something like this:
 ```scala
-for (r <- "/home/hlib/server.log" | "server has been started" ) {
-  println(r);
-}
+
+implicit var cred = CredentialsPassword("hlib", "pass")
+
+// to grep something on a remote machine
+("serverip:/home/hlib/server.log" | "server has been started").forEach(println _)
+
+// to grep something on a local machine
+("/home/hlib/server.log" | "server has been started").forEach(println _)
+
+
 ```
-... to grep local log.

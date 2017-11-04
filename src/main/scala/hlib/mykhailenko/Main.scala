@@ -4,7 +4,22 @@ import hlib.mykhailenko.ImplicitConversions._
 
 object Main extends App {
 
-  for (r <- "/home/hlib/testlog" | "aaa" ) {
+  implicit var cred = CredentialsPassword("hlib", "pass")
+
+  ("localhost:/home/hlib/testlog" | "ara").forEach(println _)
+
+  ("/home/hlib/testlog" | "ara").forEach(println _)
+
+//  cred = CredentialsKey("hlib", "path/to/key").asInstanceOf[Credentials]
+
+//  ("localhost:/home/hlib/testlog" | "ara").forEach(println _)
+
+
+  //  stringToSomething("hhhhhh//paaaaa")
+  //  for(r <- RemoteProfile("172.0.0.1", "/home/hlib/testlog") | "ara"){
+  //    println(r)
+  //  }
+  for (r <- "/home/hlib/testlog" | "ara") {
     println(r);
   }
 
