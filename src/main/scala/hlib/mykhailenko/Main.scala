@@ -4,7 +4,7 @@ import hlib.mykhailenko.ImplicitConversions._
 
 object Main extends App {
 
-  for (r <- "/home/hlib/testlog" | "a*a" ) {
+  for (r <- "/home/hlib/testlog" | ("a*a" reg) ) {
     println(r);
   }
 
