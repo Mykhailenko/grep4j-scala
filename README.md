@@ -17,5 +17,8 @@ implicit var cred = CredentialsPassword("hlib", "pass")
 // to grep something on a local machine
 ("/home/hlib/server.log" | "server has been started").forEach(println _)
 
+// or you can assert number of lines
+assertEquals(1, "serverip:/home/hlib/server.log" | "server has been started" totalLines)
+
 
 ```

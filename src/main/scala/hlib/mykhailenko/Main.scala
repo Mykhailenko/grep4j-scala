@@ -1,6 +1,7 @@
 package hlib.mykhailenko
 
 import hlib.mykhailenko.ImplicitConversions._
+import org.junit.Assert.assertEquals
 
 object Main extends App {
 
@@ -22,6 +23,8 @@ object Main extends App {
   for (r <- "/home/hlib/testlog" | "ara") {
     println(r);
   }
+
+  assertEquals(2, "/home/hlib/testlog" | "ara" totalLines)
 
 }
 
