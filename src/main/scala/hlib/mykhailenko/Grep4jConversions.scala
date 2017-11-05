@@ -8,7 +8,7 @@ import org.grep4j.core.result.GrepResults
 import collection.JavaConverters._
 
 
-object ImplicitConversions {
+object Grep4jConversions {
   implicit def stringToConstantExpression(s: String) = constantExpression(s)
 
   def autoGenerateNameForProgile = "auto-generated name " + System.currentTimeMillis

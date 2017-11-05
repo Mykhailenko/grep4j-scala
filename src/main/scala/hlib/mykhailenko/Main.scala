@@ -1,6 +1,6 @@
 package hlib.mykhailenko
 
-import hlib.mykhailenko.ImplicitConversions._
+import hlib.mykhailenko.Grep4jConversions._
 import org.junit.Assert.assertEquals
 
 object Main extends App {
